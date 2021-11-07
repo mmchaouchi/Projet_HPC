@@ -8,6 +8,15 @@
 #SBATCH --job-name=deeptools
 #SBATCH --partition=short
 
+# Program configuration
+__author__='Mohamed Malek CHAOUCHI, Babacar NDAO, Sara MOUSSADEQ'
+__email__='mohamed_malek.chaouchi@etu.uca.fr, Sara.MOUSSADEQ@etu.uca.fr, Babacar.NDAO@etu.uca.fr'
+__credits__=['Mohamed Malek CHAOUCHI, Babacar NDAO, Sara MOUSSADEQ']
+__license__='GPL3'
+__maintainer__='Mohamed Malek Chaouchi, Babacar NDAO, Sara MOUSSADEQ'
+__status__='Development'
+__version__='0.0.1'
+
 echo 'Exploration des données'
 
 # Handling errors
