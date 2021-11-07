@@ -40,12 +40,13 @@ cd "$SCRATCHDIR"
 
 #Set up data directory
 DATA_DIR="$HOME"/results/atacseq/MACS2
-#Run the program
+
 echo "Start on $SLURMD_NODENAME: "`date` >&2
 tab1=($(ls "$DATA_DIR"/*/*24h*_mapped_*.bed))
 tab2=($(ls "$DATA_DIR"/*/*0h*_mapped_*.bed))
 SHORTNAME=($(basename "${tab1[$SLURM_ARRAY_TASK_ID]}" .bed  ))
 
+#Run the program
 # intersect the peaks from both experiments.
 # -f 0.50 combined with -r requires 50% reciprocal overlap between the
 # peaks from each experiment.
